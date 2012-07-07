@@ -2,7 +2,7 @@
 ---
 
 ### Usage ###
-Just throw add 
+Just throw the following script src into your webpage:
 ``` html
 <script src="ajaxQueue.js"></script> 
 ```
@@ -13,6 +13,30 @@ var ajaxQueue1 = $.ajaxQueue();
 ajaxQueue1.add({
 	url: "http://url.com",
 	type: "GET"
+});
+```
+Additional examples for initializing
+``` javascript
+var ajaxQueue1 = $.ajaxQueue({
+	max : 5; //Sets the maximum number of in-transit ajax requests
+	id : "SOMEID"; //Sets the id of the variable; works with [a-zA-Z0-9]+
+	timeout : 50; //Sets how often we should poll the queue for firing out.
+});
+```
+
+Additional Points:
+``` javascript
+//ajaxQueue1.add( obj ) and ajaxQueue2.add( obj2 ) will both add to the same queue
+var ajaxQueue1 = $.ajaxQueue();
+var ajaxQueue2 = $.ajaxQueue(); 
+
+//ajaxQueue3.add( obj ) and ajaxQueue4.add( obj2 ) will both add to the same queue
+//as they have the same id.
+var ajaxQueue3 = $.ajaxQueue({
+	id: "X"
+});
+var ajaxQueue4 = $.ajaxQueue({
+	id: "X"
 });
 ```
 
