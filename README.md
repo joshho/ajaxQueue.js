@@ -1,5 +1,7 @@
 # ajaxQueue.js #
 ---
+### About ###
+ajaxQueue's main purpose is to limit the number of ajax requests sent at any one moment.
 
 ### Usage ###
 Requires JQuery, tested on 1.7.2, to use, just throw the following script src into your webpage:
