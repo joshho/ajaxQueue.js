@@ -2,6 +2,7 @@
 ---
 ### About ###
 ajaxQueue's main purpose is to limit the number of ajax requests sent at any one moment.
+When requests become completed, the next ajax request in the queue will be fired.
 
 ### Usage ###
 Requires JQuery, tested on 1.7.2, to use, just throw the following script src into your webpage:
