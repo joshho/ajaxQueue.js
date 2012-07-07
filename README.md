@@ -2,7 +2,7 @@
 ---
 
 ### Usage ###
-Just throw the following script src into your webpage:
+Requires JQuery, tested on 1.7.2, to use, just throw the following script src into your webpage:
 ``` html
 <script src="ajaxQueue.js"></script> 
 ```
@@ -43,7 +43,7 @@ var ajaxQueue4 = $.ajaxQueue({
 
 ###Program Notes###
   Due to the inherent limitation of javascript single threaded-ness,
-  your browser at times will fire off ajax requests at poorly timed intervals.
+  browsers may fire off ajax requests at poorly timed intervals.
   There is a todo to investigate how web workers can solve this issue.
 
 ### Author Notes ###
