@@ -1,7 +1,7 @@
 # ajaxQueue.js #
 ---
 ### About ###
-ajaxQueue's main purpose is to limit the number of ajax requests sent at any one moment.
+ajaxQueue's main purpose is to limit the number of ajax requests sent at any one moment.<br/>
 When requests become completed, the next ajax request in the queue will be fired.
 
 ### Usage ###
