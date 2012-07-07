@@ -2,7 +2,12 @@
 ---
 
 ### Usage ###
-Just throw add <script src="ajaxQueue.js"></script> and declare a variable:
+Just throw add 
+``` html
+<script src="ajaxQueue.js"></script> 
+```
+
+and declare a variable:
 ``` javascript
 var ajaxQueue1 = $.ajaxQueue();
 ajaxQueue1.add({
@@ -18,7 +23,7 @@ ajaxQueue1.add({
   There is a todo to investigate how web workers can solve this issue.
 
 ### Author Notes ###
-  My first plugin, I needed an ajax queue-r for pages with thousands of ajax requests.
+  My first plugin, I needed an ajax queuer for pages with thousands of ajax requests.
   
 ### License ###
 http://creativecommons.org/licenses/by-nc-sa/3.0/
