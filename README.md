@@ -5,7 +5,7 @@ ajaxQueue's main purpose is to limit the number of ajax requests sent at any one
 When requests become completed, the next ajax request in the queue will be fired.
 
 ### Usage ###
-Requires JQuery, tested on 1.7.2, to use, just throw the following script src into your webpage:
+Requires JQuery, tested on 1.7.2, to use add the following script src into your webpage:
 ``` html
 <script src="ajaxQueue.js"></script> 
 ```
@@ -47,13 +47,9 @@ var ajaxQueue4 = $.ajaxQueue({
 ###Program Notes###
   Due to the inherent limitation of javascript single threaded-ness,
   browsers may fire off ajax requests at poorly timed intervals.
-  There is a todo to investigate how web workers can solve this issue.
 
 ### Author Notes ###
   My first plugin, I needed an ajax queuer for pages with thousands of ajax requests.
   
 ### License ###
 http://creativecommons.org/licenses/by-nc-sa/3.0/
-
-### TODO ###
-  Investigate how web workers can improve the performance.
